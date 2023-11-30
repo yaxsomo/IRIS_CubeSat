@@ -1,0 +1,13 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "gen_directory": "../../../../I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design",
+      "name": "IRIS_Block_Design",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {}
+  }
+}

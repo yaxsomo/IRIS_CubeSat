@@ -1,3 +1,23 @@
+################################################################################
+##   _____   _____    _____    _____  
+##  |_   _| |  __ \  |_   _|  / ____| 
+##    | |   | |__) |   | |   | (___   
+##    | |   |  _  /    | |    \___ \  
+##   _| |_ _| | \ \ _ _| |_ _ ____) | 
+##  |_____(_)_|  \_(_)_____(_)_____(_)
+##       Optical Communication System                                                                                                            
+##
+##  File : Constraints.xdc
+##  Authors : Yassine DEHHANI & Emile BAILEY
+##  Description : This file contains all the constraints descriptions for the FPGA chip. 
+##  Creation Date : 30-11-2023
+################################################################################
+
+
+
+
+
+
 # Clock Constraints
 set_property -dict {PACKAGE_PIN R4 IOSTANDARD LVDS} [get_ports SYS_CLK_P]
 set_property -dict {PACKAGE_PIN T4 IOSTANDARD LVDS} [get_ports SYS_CLK_N]
@@ -209,10 +229,6 @@ set_property -dict {PACKAGE_PIN E22 IOSTANDARD LVCMOS33} [get_ports J4_P30]
 set_property -dict {PACKAGE_PIN E21 IOSTANDARD LVCMOS33} [get_ports J4_P32]
 set_property -dict {PACKAGE_PIN B21 IOSTANDARD LVCMOS33} [get_ports J4_P34]
 set_property -dict {PACKAGE_PIN F21 IOSTANDARD LVCMOS33} [get_ports J4_P36]
-# ... (repeat for the remaining pins)
-
-
-# ... (repeat for the remaining pins)
 
 # J5 Constraints
 set_property -dict {PACKAGE_PIN AB15 IOSTANDARD LVCMOS33} [get_ports J5_P3]
@@ -249,27 +265,6 @@ set_property -dict {PACKAGE_PIN F18 IOSTANDARD LVCMOS33} [get_ports J5_P30]
 set_property -dict {PACKAGE_PIN F19 IOSTANDARD LVCMOS33} [get_ports J5_P32]
 set_property -dict {PACKAGE_PIN B20 IOSTANDARD LVCMOS33} [get_ports J5_P34]
 set_property -dict {PACKAGE_PIN E19 IOSTANDARD LVCMOS33} [get_ports J5_P36]
-
-
-set_property -dict {PACKAGE_PIN AA15 IOSTANDARD LVCMOS33} [get_ports 4]
-set_property -dict {PACKAGE_PIN Y13 IOSTANDARD LVCMOS33} [get_ports 6]
-set_property -dict {PACKAGE_PIN AB16 IOSTANDARD LVCMOS33} [get_ports 8]
-set_property -dict {PACKAGE_PIN Y16 IOSTANDARD LVCMOS33} [get_ports 10]
-set_property -dict {PACKAGE_PIN AB11 IOSTANDARD LVCMOS33} [get_ports 12]
-set_property -dict {PACKAGE_PIN W14 IOSTANDARD LVCMOS33} [get_ports 14]
-set_property -dict {PACKAGE_PIN C18 IOSTANDARD LVCMOS33} [get_ports 16]
-set_property -dict {PACKAGE_PIN F13 IOSTANDARD LVCMOS33} [get_ports 18]
-set_property -dict {PACKAGE_PIN E13 IOSTANDARD LVCMOS33} [get_ports 20]
-set_property -dict {PACKAGE_PIN D14 IOSTANDARD LVCMOS33} [get_ports 22]
-set_property -dict {PACKAGE_PIN C13 IOSTANDARD LVCMOS33} [get_ports 24]
-set_property -dict {PACKAGE_PIN AA13 IOSTANDARD LVCMOS33} [get_ports 26]
-set_property -dict {PACKAGE_PIN A18 IOSTANDARD LVCMOS33} [get_ports 28]
-set_property -dict {PACKAGE_PIN F18 IOSTANDARD LVCMOS33} [get_ports 30]
-set_property -dict {PACKAGE_PIN F19 IOSTANDARD LVCMOS33} [get_ports 32]
-set_property -dict {PACKAGE_PIN B20 IOSTANDARD LVCMOS33} [get_ports 34]
-set_property -dict {PACKAGE_PIN E19 IOSTANDARD LVCMOS33} [get_ports 36]
-# ... (repeat for the remaining pins)
-
 
 # Net Constraints
 set_property -dict {PACKAGE_PIN B18 IOSTANDARD LVCMOS33} [get_ports KEY1]
