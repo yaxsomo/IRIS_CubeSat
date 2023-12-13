@@ -31,7 +31,7 @@
       },
       "axi_gpio_0": "",
       "axi_gpio_1": "",
-      "aurora_8b10b_0": ""
+      "axi_ethernet_0": ""
     },
     "ports": {
       "UART1_TXD": {
@@ -75,26 +75,6 @@
       "gpio_io_i_0": {
         "direction": "I",
         "left": "3",
-        "right": "0"
-      },
-      "SFP1_TX_N": {
-        "direction": "O",
-        "left": "0",
-        "right": "0"
-      },
-      "SFP1_TX_P": {
-        "direction": "O",
-        "left": "0",
-        "right": "0"
-      },
-      "SFP1_RX_N": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "SFP1_RX_P": {
-        "direction": "I",
-        "left": "0",
         "right": "0"
       }
     },
@@ -873,18 +853,88 @@
           }
         }
       },
-      "aurora_8b10b_0": {
-        "vlnv": "xilinx.com:ip:aurora_8b10b:11.1",
-        "ip_revision": "19",
-        "xci_name": "IRIS_Block_Design_aurora_8b10b_0_1",
-        "xci_path": "ip\\IRIS_Block_Design_aurora_8b10b_0_1\\IRIS_Block_Design_aurora_8b10b_0_1.xci",
-        "inst_hier_path": "aurora_8b10b_0",
+      "axi_ethernet_0": {
+        "vlnv": "xilinx.com:ip:axi_ethernet:7.2",
+        "ip_revision": "14",
+        "xci_name": "IRIS_Block_Design_axi_ethernet_0_1",
+        "xci_path": "ip\\IRIS_Block_Design_axi_ethernet_0_1\\IRIS_Block_Design_axi_ethernet_0_1.xci",
+        "inst_hier_path": "axi_ethernet_0",
         "parameters": {
-          "C_DRP_IF": {
-            "value": "false"
+          "PHY_TYPE": {
+            "value": "1000BaseX"
+          }
+        },
+        "interface_ports": {
+          "s_axi": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "parameters": {
+              "ADDR_WIDTH": {
+                "value": "18"
+              },
+              "PROTOCOL": {
+                "value": "AXI4LITE"
+              }
+            },
+            "memory_map_ref": "s_axi"
           },
-          "C_LINE_RATE": {
-            "value": "1.25"
+          "s_axis_txd": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "s_axis_txc": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "m_axis_rxd": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "m_axis_rxs": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "sfp": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:sfp:1.0",
+            "vlnv": "xilinx.com:interface:sfp_rtl:1.0"
+          },
+          "mgt_clk": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+            "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+            "parameters": {
+              "TYPE": {
+                "value": "ETH_MGT_CLK"
+              }
+            }
+          }
+        },
+        "addressing": {
+          "memory_maps": {
+            "s_axi": {
+              "address_blocks": {
+                "Reg0": {
+                  "base_address": "0",
+                  "range": "256K",
+                  "width": "18",
+                  "usage": "register",
+                  "bank_blocks": {
+                    "SEG_eth_buf_REG;/eth_buf/S_AXI/Reg;xilinx.com:ip:axi_ethernet_buffer:2.0;/eth_buf;S_AXI;NONE;NONE": {
+                      "base_address": "0",
+                      "range": "256K",
+                      "width": "18",
+                      "usage": "register"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -934,18 +984,6 @@
       }
     },
     "nets": {
-      "aurora_8b10b_0_txn": {
-        "ports": [
-          "aurora_8b10b_0/txn",
-          "SFP1_TX_N"
-        ]
-      },
-      "aurora_8b10b_0_txp": {
-        "ports": [
-          "aurora_8b10b_0/txp",
-          "SFP1_TX_P"
-        ]
-      },
       "axi_gpio_1_gpio_io_o": {
         "ports": [
           "axi_gpio_1/gpio_io_o",
@@ -1033,18 +1071,6 @@
         "ports": [
           "UART1_RXD",
           "axi_uartlite_0/rx"
-        ]
-      },
-      "rxn_0_1": {
-        "ports": [
-          "SFP1_RX_N",
-          "aurora_8b10b_0/rxn"
-        ]
-      },
-      "rxp_0_1": {
-        "ports": [
-          "SFP1_RX_P",
-          "aurora_8b10b_0/rxp"
         ]
       }
     },
