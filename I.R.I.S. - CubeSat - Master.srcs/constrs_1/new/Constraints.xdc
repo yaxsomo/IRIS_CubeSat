@@ -11,6 +11,10 @@
 ##  Authors : Yassine DEHHANI & Emile BAILEY
 ##  Description : This file contains all the constraints descriptions for the FPGA chip. 
 ##  Creation Date : 30-11-2023
+## 
+##
+##
+##  (c) Copyright 2023-2026 Yassine DEHHANI & Emile BAILEY. All rights reserved.
 ################################################################################
 
 
@@ -23,6 +27,9 @@ set_property -dict {PACKAGE_PIN R4 IOSTANDARD LVDS} [get_ports SYS_CLK_P]
 set_property -dict {PACKAGE_PIN T4 IOSTANDARD LVDS} [get_ports SYS_CLK_N]
 set_property -dict {PACKAGE_PIN F6 IOSTANDARD DIFF_SSTL15} [get_ports MGT_CLK0_P]
 set_property -dict {PACKAGE_PIN E6 IOSTANDARD DIFF_SSTL15} [get_ports MGT_CLK0_N]
+
+# System Reset Key
+set_property -dict {PACKAGE_PIN T6 IOSTANDARD LVCMOS33} [get_ports RST]
 
 # DDR3 Constraints
 set_property -dict {PACKAGE_PIN E1 IOSTANDARD SSTL15} [get_ports DDR3_DQS0_P]
