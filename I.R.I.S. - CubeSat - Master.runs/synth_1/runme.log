@@ -1,0 +1,499 @@
+
+*** Running vivado
+    with args -log IRIS_Block_Design_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source IRIS_Block_Design_wrapper.tcl
+
+
+Commande ECHO d‚sactiv‚e.
+Commande ECHO d‚sactiv‚e.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source IRIS_Block_Design_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 473.809 ; gain = 178.637
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/utils_1/imports/synth_1/IRIS_Block_Design_wrapper.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/utils_1/imports/synth_1/IRIS_Block_Design_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top IRIS_Block_Design_wrapper -part xc7a100tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14996
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1364.910 ; gain = 440.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_wrapper' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/hdl/IRIS_Block_Design_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_axi_gpio_0_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_axi_gpio_0_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_axi_gpio_1_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_axi_gpio_1_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_axi_gpio_2_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_axi_gpio_2_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_axi_gpio_3_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_axi_gpio_3_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_axi_gpio_4_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_axi_gpio_4_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_axi_gpio_5_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_axi_gpio_5_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_axi_gpio_6_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_axi_gpio_6_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_6_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_axi_gpio_7_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_7_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_axi_gpio_7_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_gpio_7_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_axi_uartlite_0_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_axi_uartlite_0_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'IRIS_Block_Design_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:442]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'IRIS_Block_Design_axi_uartlite_0_0' has 22 connections declared, but only 21 given [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:442]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_clk_wiz_0_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_clk_wiz_0_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_mdm_1_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_mdm_1_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_microblaze_0_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_microblaze_0_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'IRIS_Block_Design_microblaze_0_0' is unconnected for instance 'microblaze_0' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:481]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'IRIS_Block_Design_microblaze_0_0' has 52 connections declared, but only 51 given [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:481]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_microblaze_0_axi_periph_0' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:761]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_DFLRFL' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2107]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_DFLRFL' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2107]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_QBXEG0' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2239]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_QBXEG0' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2239]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1TVSK2R' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2371]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1TVSK2R' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2371]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_10MG6W2' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2503]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_10MG6W2' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2503]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_MIRQSK' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2635]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_MIRQSK' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2635]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_HNT9NP' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2767]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_HNT9NP' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2767]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_12WEY92' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_12WEY92' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2899]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1QWWKH3' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3031]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1QWWKH3' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3031]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1VECGBV' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3163]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1VECGBV' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3163]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_121P3XB' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3529]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_121P3XB' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3529]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_xbar_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_xbar_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'IRIS_Block_Design_xbar_0' is unconnected for instance 'xbar' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2066]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'IRIS_Block_Design_xbar_0' is unconnected for instance 'xbar' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2066]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'IRIS_Block_Design_xbar_0' has 40 connections declared, but only 38 given [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:2066]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_microblaze_0_axi_periph_0' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:761]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1CRPLL2' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3295]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_dlmb_bram_if_cntlr_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_dlmb_v10_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_dlmb_v10_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'IRIS_Block_Design_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3441]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'IRIS_Block_Design_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3441]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_ilmb_bram_if_cntlr_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_ilmb_v10_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_ilmb_v10_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'IRIS_Block_Design_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3487]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'IRIS_Block_Design_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3487]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_lmb_bram_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_lmb_bram_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'IRIS_Block_Design_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3512]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'IRIS_Block_Design_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3512]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'IRIS_Block_Design_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3512]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1CRPLL2' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:3295]
+INFO: [Synth 8-6157] synthesizing module 'IRIS_Block_Design_rst_clk_wiz_0_100M_0' [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_rst_clk_wiz_0_100M_0' (0#1) [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/.Xil/Vivado-8680-DESKTOP-BC6995K/realtime/IRIS_Block_Design_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'IRIS_Block_Design_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:750]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'IRIS_Block_Design_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:750]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'IRIS_Block_Design_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 8 given [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:750]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/synth/IRIS_Block_Design.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'IRIS_Block_Design_wrapper' (0#1) [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/hdl/IRIS_Block_Design_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_121P3XB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_121P3XB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_121P3XB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_121P3XB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m08_couplers_imp_1VECGBV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m08_couplers_imp_1VECGBV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m08_couplers_imp_1VECGBV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m08_couplers_imp_1VECGBV is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m07_couplers_imp_1QWWKH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m07_couplers_imp_1QWWKH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m07_couplers_imp_1QWWKH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m07_couplers_imp_1QWWKH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m06_couplers_imp_12WEY92 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m06_couplers_imp_12WEY92 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m06_couplers_imp_12WEY92 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m06_couplers_imp_12WEY92 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m05_couplers_imp_HNT9NP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m05_couplers_imp_HNT9NP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m05_couplers_imp_HNT9NP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m05_couplers_imp_HNT9NP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m04_couplers_imp_MIRQSK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m04_couplers_imp_MIRQSK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m04_couplers_imp_MIRQSK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m04_couplers_imp_MIRQSK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_10MG6W2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_10MG6W2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_10MG6W2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_10MG6W2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_1TVSK2R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_1TVSK2R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_1TVSK2R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_1TVSK2R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_QBXEG0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_QBXEG0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_QBXEG0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_QBXEG0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_DFLRFL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_DFLRFL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_DFLRFL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_DFLRFL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M08_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M08_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1482.625 ; gain = 558.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1482.625 ; gain = 558.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1482.625 ; gain = 558.078
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1482.625 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_microblaze_0_0/IRIS_Block_Design_microblaze_0_0/IRIS_Block_Design_microblaze_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_microblaze_0_0/IRIS_Block_Design_microblaze_0_0/IRIS_Block_Design_microblaze_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/clk_wiz_0'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_uartlite_0_0/IRIS_Block_Design_axi_uartlite_0_0/IRIS_Block_Design_axi_uartlite_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_uartlite_0_0/IRIS_Block_Design_axi_uartlite_0_0/IRIS_Block_Design_axi_uartlite_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_dlmb_v10_0/IRIS_Block_Design_dlmb_v10_0/IRIS_Block_Design_dlmb_v10_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_dlmb_v10_0/IRIS_Block_Design_dlmb_v10_0/IRIS_Block_Design_dlmb_v10_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_ilmb_v10_0/IRIS_Block_Design_ilmb_v10_0/IRIS_Block_Design_dlmb_v10_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_ilmb_v10_0/IRIS_Block_Design_ilmb_v10_0/IRIS_Block_Design_dlmb_v10_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_dlmb_bram_if_cntlr_0/IRIS_Block_Design_dlmb_bram_if_cntlr_0/IRIS_Block_Design_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_dlmb_bram_if_cntlr_0/IRIS_Block_Design_dlmb_bram_if_cntlr_0/IRIS_Block_Design_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_ilmb_bram_if_cntlr_0/IRIS_Block_Design_ilmb_bram_if_cntlr_0/IRIS_Block_Design_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_ilmb_bram_if_cntlr_0/IRIS_Block_Design_ilmb_bram_if_cntlr_0/IRIS_Block_Design_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_lmb_bram_0/IRIS_Block_Design_lmb_bram_0/IRIS_Block_Design_lmb_bram_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_lmb_bram_0/IRIS_Block_Design_lmb_bram_0/IRIS_Block_Design_lmb_bram_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_mdm_1_0/IRIS_Block_Design_mdm_1_0/IRIS_Block_Design_mdm_1_0_in_context.xdc] for cell 'IRIS_Block_Design_i/mdm_1'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_mdm_1_0/IRIS_Block_Design_mdm_1_0/IRIS_Block_Design_mdm_1_0_in_context.xdc] for cell 'IRIS_Block_Design_i/mdm_1'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_rst_clk_wiz_0_100M_0/IRIS_Block_Design_rst_clk_wiz_0_100M_0/IRIS_Block_Design_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'IRIS_Block_Design_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_rst_clk_wiz_0_100M_0/IRIS_Block_Design_rst_clk_wiz_0_100M_0/IRIS_Block_Design_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'IRIS_Block_Design_i/rst_clk_wiz_0_100M'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_xbar_0/IRIS_Block_Design_xbar_0/IRIS_Block_Design_xbar_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_xbar_0/IRIS_Block_Design_xbar_0/IRIS_Block_Design_xbar_0_in_context.xdc] for cell 'IRIS_Block_Design_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_0_0/IRIS_Block_Design_axi_gpio_0_0/IRIS_Block_Design_axi_gpio_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_0_0/IRIS_Block_Design_axi_gpio_0_0/IRIS_Block_Design_axi_gpio_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_0'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_1_0/IRIS_Block_Design_axi_gpio_1_0/IRIS_Block_Design_axi_gpio_1_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_1'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_1_0/IRIS_Block_Design_axi_gpio_1_0/IRIS_Block_Design_axi_gpio_1_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_1'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_2_0/IRIS_Block_Design_axi_gpio_2_0/IRIS_Block_Design_axi_gpio_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_2'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_2_0/IRIS_Block_Design_axi_gpio_2_0/IRIS_Block_Design_axi_gpio_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_2'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_3_0/IRIS_Block_Design_axi_gpio_3_0/IRIS_Block_Design_axi_gpio_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_3'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_3_0/IRIS_Block_Design_axi_gpio_3_0/IRIS_Block_Design_axi_gpio_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_3'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_4_0/IRIS_Block_Design_axi_gpio_4_0/IRIS_Block_Design_axi_gpio_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_4'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_4_0/IRIS_Block_Design_axi_gpio_4_0/IRIS_Block_Design_axi_gpio_0_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_4'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_5_0/IRIS_Block_Design_axi_gpio_5_0/IRIS_Block_Design_axi_gpio_1_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_5'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_5_0/IRIS_Block_Design_axi_gpio_5_0/IRIS_Block_Design_axi_gpio_1_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_5'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_6_0/IRIS_Block_Design_axi_gpio_6_0/IRIS_Block_Design_axi_gpio_1_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_6'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_6_0/IRIS_Block_Design_axi_gpio_6_0/IRIS_Block_Design_axi_gpio_1_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_6'
+Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_7_0/IRIS_Block_Design_axi_gpio_7_0/IRIS_Block_Design_axi_gpio_1_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_7'
+Finished Parsing XDC File [c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_7_0/IRIS_Block_Design_axi_gpio_7_0/IRIS_Block_Design_axi_gpio_1_0_in_context.xdc] for cell 'IRIS_Block_Design_i/axi_gpio_7'
+Parsing XDC File [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Q0_CLK0_GTREFCLK_PAD_P_IN'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'Q0_CLK0_GTREFCLK_PAD_P_IN'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'Q0_CLK0_GTREFCLK_PAD_N_IN'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'SFP1_TX_P'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'SFP1_TX_N'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'SFP1_RX_P'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'SFP1_RX_N'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'SFP1_TX_DIS'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'SFP1_LOSS'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'SFP2_TX_P'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'SFP2_TX_N'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'SFP2_RX_P'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'SFP2_RX_N'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'SFP2_TX_DIS'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'SFP2_LOSS'. [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc:129]
+Finished Parsing XDC File [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/IRIS_Block_Design_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/IRIS_Block_Design_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/IRIS_Block_Design_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1499.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+AccŠs refus‚.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1499.949 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'IRIS_Block_Design_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for SYS_CLK_IN_N. (constraint file  {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SYS_CLK_IN_N. (constraint file  {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for SYS_CLK_IN_P. (constraint file  {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0_in_context.xdc}, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SYS_CLK_IN_P. (constraint file  {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0_in_context.xdc}, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/axi_gpio_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/axi_gpio_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/axi_gpio_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/axi_gpio_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/axi_gpio_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for IRIS_Block_Design_i/axi_gpio_7. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M08_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M08_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module IRIS_Block_Design_microblaze_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------------+----------+
+|      |BlackBox name                          |Instances |
++------+---------------------------------------+----------+
+|1     |IRIS_Block_Design_xbar_0               |         1|
+|2     |IRIS_Block_Design_axi_gpio_0_0         |         1|
+|3     |IRIS_Block_Design_axi_gpio_1_0         |         1|
+|4     |IRIS_Block_Design_axi_gpio_2_0         |         1|
+|5     |IRIS_Block_Design_axi_gpio_3_0         |         1|
+|6     |IRIS_Block_Design_axi_gpio_4_0         |         1|
+|7     |IRIS_Block_Design_axi_gpio_5_0         |         1|
+|8     |IRIS_Block_Design_axi_gpio_6_0         |         1|
+|9     |IRIS_Block_Design_axi_gpio_7_0         |         1|
+|10    |IRIS_Block_Design_axi_uartlite_0_0     |         1|
+|11    |IRIS_Block_Design_clk_wiz_0_0          |         1|
+|12    |IRIS_Block_Design_mdm_1_0              |         1|
+|13    |IRIS_Block_Design_microblaze_0_0       |         1|
+|14    |IRIS_Block_Design_rst_clk_wiz_0_100M_0 |         1|
+|15    |IRIS_Block_Design_dlmb_bram_if_cntlr_0 |         1|
+|16    |IRIS_Block_Design_dlmb_v10_0           |         1|
+|17    |IRIS_Block_Design_ilmb_bram_if_cntlr_0 |         1|
+|18    |IRIS_Block_Design_ilmb_v10_0           |         1|
+|19    |IRIS_Block_Design_lmb_bram_0           |         1|
++------+---------------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |IRIS_Block_Design_axi_gpio_0         |     1|
+|2     |IRIS_Block_Design_axi_gpio_1         |     1|
+|3     |IRIS_Block_Design_axi_gpio_2         |     1|
+|4     |IRIS_Block_Design_axi_gpio_3         |     1|
+|5     |IRIS_Block_Design_axi_gpio_4         |     1|
+|6     |IRIS_Block_Design_axi_gpio_5         |     1|
+|7     |IRIS_Block_Design_axi_gpio_6         |     1|
+|8     |IRIS_Block_Design_axi_gpio_7         |     1|
+|9     |IRIS_Block_Design_axi_uartlite_0     |     1|
+|10    |IRIS_Block_Design_clk_wiz_0          |     1|
+|11    |IRIS_Block_Design_dlmb_bram_if_cntlr |     1|
+|12    |IRIS_Block_Design_dlmb_v10           |     1|
+|13    |IRIS_Block_Design_ilmb_bram_if_cntlr |     1|
+|14    |IRIS_Block_Design_ilmb_v10           |     1|
+|15    |IRIS_Block_Design_lmb_bram           |     1|
+|16    |IRIS_Block_Design_mdm_1              |     1|
+|17    |IRIS_Block_Design_microblaze_0       |     1|
+|18    |IRIS_Block_Design_rst_clk_wiz_0_100M |     1|
+|19    |IRIS_Block_Design_xbar               |     1|
+|20    |IBUF                                 |     6|
+|21    |OBUF                                 |     5|
++------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1499.949 ; gain = 575.402
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1499.949 ; gain = 558.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1499.949 ; gain = 575.402
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1503.102 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1509.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+AccŠs refus‚.
+Synth Design complete | Checksum: 359f4451
+INFO: [Common 17-83] Releasing license: Synthesis
+88 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 1509.723 ; gain = 995.273
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1509.723 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.runs/synth_1/IRIS_Block_Design_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file IRIS_Block_Design_wrapper_utilization_synth.rpt -pb IRIS_Block_Design_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 14 13:41:35 2023...

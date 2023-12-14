@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x733D4FC93D3FE7A4",
+      "boundary_crc": "0x5303F7D517153EE0",
       "device": "xc7a100tfgg484-2",
       "gen_directory": "../../../../I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design",
       "name": "IRIS_Block_Design",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2023.2"
+      "tool_version": "2023.2",
+      "validated": "true"
     },
     "design_tree": {
       "microblaze_0": "",
@@ -30,8 +31,7 @@
         "m02_couplers": {}
       },
       "axi_gpio_0": "",
-      "axi_gpio_1": "",
-      "axi_ethernet_0": ""
+      "axi_gpio_1": ""
     },
     "ports": {
       "UART1_TXD": {
@@ -40,21 +40,53 @@
       "UART1_RXD": {
         "direction": "I"
       },
-      "MGT_CLK0_P": {
+      "SYS_CLK_IN_P": {
         "type": "clk",
         "direction": "I",
         "parameters": {
+          "CLK_DOMAIN": {
+            "value": "IRIS_Block_Design_MGT_CLK0_P",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
           }
         }
       },
-      "MGT_CLK0_N": {
+      "SYS_CLK_IN_N": {
         "type": "clk",
         "direction": "I",
         "parameters": {
+          "CLK_DOMAIN": {
+            "value": "IRIS_Block_Design_MGT_CLK0_N",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
           }
         }
       },
@@ -62,17 +94,21 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_LOW"
           }
         }
       },
-      "gpio_io_o_0": {
+      "LED1": {
         "direction": "O",
-        "left": "3",
+        "left": "0",
         "right": "0"
       },
-      "gpio_io_i_0": {
+      "KEY1": {
         "direction": "I",
         "left": "3",
         "right": "0"
@@ -834,7 +870,7 @@
             "value": "1"
           },
           "C_GPIO_WIDTH": {
-            "value": "4"
+            "value": "1"
           }
         }
       },
@@ -849,92 +885,7 @@
             "value": "1"
           },
           "C_GPIO_WIDTH": {
-            "value": "4"
-          }
-        }
-      },
-      "axi_ethernet_0": {
-        "vlnv": "xilinx.com:ip:axi_ethernet:7.2",
-        "ip_revision": "14",
-        "xci_name": "IRIS_Block_Design_axi_ethernet_0_1",
-        "xci_path": "ip\\IRIS_Block_Design_axi_ethernet_0_1\\IRIS_Block_Design_axi_ethernet_0_1.xci",
-        "inst_hier_path": "axi_ethernet_0",
-        "parameters": {
-          "PHY_TYPE": {
-            "value": "1000BaseX"
-          }
-        },
-        "interface_ports": {
-          "s_axi": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "parameters": {
-              "ADDR_WIDTH": {
-                "value": "18"
-              },
-              "PROTOCOL": {
-                "value": "AXI4LITE"
-              }
-            },
-            "memory_map_ref": "s_axi"
-          },
-          "s_axis_txd": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "s_axis_txc": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "m_axis_rxd": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "m_axis_rxs": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "sfp": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:sfp:1.0",
-            "vlnv": "xilinx.com:interface:sfp_rtl:1.0"
-          },
-          "mgt_clk": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
-            "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
-            "parameters": {
-              "TYPE": {
-                "value": "ETH_MGT_CLK"
-              }
-            }
-          }
-        },
-        "addressing": {
-          "memory_maps": {
-            "s_axi": {
-              "address_blocks": {
-                "Reg0": {
-                  "base_address": "0",
-                  "range": "256K",
-                  "width": "18",
-                  "usage": "register",
-                  "bank_blocks": {
-                    "SEG_eth_buf_REG;/eth_buf/S_AXI/Reg;xilinx.com:ip:axi_ethernet_buffer:2.0;/eth_buf;S_AXI;NONE;NONE": {
-                      "base_address": "0",
-                      "range": "256K",
-                      "width": "18",
-                      "usage": "register"
-                    }
-                  }
-                }
-              }
-            }
+            "value": "1"
           }
         }
       }
@@ -987,7 +938,7 @@
       "axi_gpio_1_gpio_io_o": {
         "ports": [
           "axi_gpio_1/gpio_io_o",
-          "gpio_io_o_0"
+          "LED1"
         ]
       },
       "axi_uartlite_0_tx": {
@@ -998,13 +949,13 @@
       },
       "clk_in1_n_0_1": {
         "ports": [
-          "MGT_CLK0_N",
+          "SYS_CLK_IN_N",
           "clk_wiz_0/clk_in1_n"
         ]
       },
       "clk_in1_p_0_1": {
         "ports": [
-          "MGT_CLK0_P",
+          "SYS_CLK_IN_P",
           "clk_wiz_0/clk_in1_p"
         ]
       },
@@ -1026,7 +977,7 @@
       },
       "gpio_io_i_0_1": {
         "ports": [
-          "gpio_io_i_0",
+          "KEY1",
           "axi_gpio_0/gpio_io_i"
         ]
       },
