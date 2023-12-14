@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Dec 14 13:41:35 2023
+| Date         : Thu Dec 14 14:52:25 2023
 | Host         : DESKTOP-BC6995K running 64-bit major release  (build 9200)
 | Command      : report_utilization -file IRIS_Block_Design_wrapper_utilization_synth.rpt -pb IRIS_Block_Design_wrapper_utilization_synth.pb
 | Design       : IRIS_Block_Design_wrapper
@@ -92,7 +92,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   11 |     0 |          0 |       285 |  3.86 |
+| Bonded IOB                  |    5 |     0 |          0 |       285 |  1.75 |
 | Bonded IPADs                |    0 |     0 |          0 |        14 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         8 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         6 |  0.00 |
@@ -151,8 +151,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| IBUF     |    6 |                  IO |
-| OBUF     |    5 |                  IO |
+| IBUF     |    3 |                  IO |
+| OBUF     |    2 |                  IO |
 +----------+------+---------------------+
 
 
@@ -173,12 +173,6 @@ Warning! LUT value is adjusted to account for LUT combining.
 | IRIS_Block_Design_dlmb_bram_if_cntlr_0 |    1 |
 | IRIS_Block_Design_clk_wiz_0_0          |    1 |
 | IRIS_Block_Design_axi_uartlite_0_0     |    1 |
-| IRIS_Block_Design_axi_gpio_7_0         |    1 |
-| IRIS_Block_Design_axi_gpio_6_0         |    1 |
-| IRIS_Block_Design_axi_gpio_5_0         |    1 |
-| IRIS_Block_Design_axi_gpio_4_0         |    1 |
-| IRIS_Block_Design_axi_gpio_3_0         |    1 |
-| IRIS_Block_Design_axi_gpio_2_0         |    1 |
 | IRIS_Block_Design_axi_gpio_1_0         |    1 |
 | IRIS_Block_Design_axi_gpio_0_0         |    1 |
 +----------------------------------------+------+

@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Thu Dec 14 13:07:02 2023
+// Date        : Thu Dec 14 13:07:01 2023
 // Host        : DESKTOP-BC6995K running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat -
-//               Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_mdm_1_0/IRIS_Block_Design_mdm_1_0_sim_netlist.v}
+// Command     : write_verilog -force -mode funcsim -rename_top IRIS_Block_Design_mdm_1_0 -prefix
+//               IRIS_Block_Design_mdm_1_0_ IRIS_Block_Design_mdm_1_0_sim_netlist.v
 // Design      : IRIS_Block_Design_mdm_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -2488,7 +2488,6 @@ module IRIS_Block_Design_mdm_1_0
         .bscan_ext_update(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "JTAG_CONTROL" *) 
 module IRIS_Block_Design_mdm_1_0_JTAG_CONTROL
    (\shift_Count_reg[0]_0 ,
     Debug_SYS_Rst,
@@ -3669,7 +3668,6 @@ module IRIS_Block_Design_mdm_1_0_JTAG_CONTROL
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "MB_BSCANE2" *) 
 module IRIS_Block_Design_mdm_1_0_MB_BSCANE2
    (\Use_E2.BSCANE2_I_0 ,
     DRCK,
@@ -3812,7 +3810,6 @@ module IRIS_Block_Design_mdm_1_0_MB_BSCANE2
         .O(\Use_E2.BSCANE2_I_5 ));
 endmodule
 
-(* ORIG_REF_NAME = "MB_BUFG" *) 
 module IRIS_Block_Design_mdm_1_0_MB_BUFG
    (Dbg_Clk_0,
     DRCK);
@@ -3828,7 +3825,6 @@ module IRIS_Block_Design_mdm_1_0_MB_BUFG
         .O(Dbg_Clk_0));
 endmodule
 
-(* ORIG_REF_NAME = "MB_FDC_1" *) 
 module IRIS_Block_Design_mdm_1_0_MB_FDC_1
    (D,
     Dbg_Reg_En_0,
@@ -4436,7 +4432,6 @@ module IRIS_Block_Design_mdm_1_0_MB_FDC_1
         .O(\tdi_shifter_reg[0]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "MB_FDRE_1" *) 
 module IRIS_Block_Design_mdm_1_0_MB_FDRE_1
    (sync,
     Dbg_Shift_0,
@@ -4493,7 +4488,6 @@ module IRIS_Block_Design_mdm_1_0_MB_FDRE_1
         .R(D));
 endmodule
 
-(* ORIG_REF_NAME = "MB_LUT1" *) 
 module IRIS_Block_Design_mdm_1_0_MB_LUT1
    (Ext_JTAG_TDI,
     I0);
@@ -4512,7 +4506,6 @@ module IRIS_Block_Design_mdm_1_0_MB_LUT1
         .O(\Using_FPGA.lut1_o ));
 endmodule
 
-(* ORIG_REF_NAME = "MB_SRL16E" *) 
 module IRIS_Block_Design_mdm_1_0_MB_SRL16E
    (tdo,
     \Use_unisim.MB_SRL16E_I1_0 ,
@@ -4770,8 +4763,7 @@ endmodule
 (* C_TRACE_CLK_FREQ_HZ = "200000000" *) (* C_TRACE_CLK_OUT_PHASE = "90" *) (* C_TRACE_DATA_WIDTH = "32" *) 
 (* C_TRACE_ID = "110" *) (* C_TRACE_OUTPUT = "0" *) (* C_TRACE_PROTOCOL = "1" *) 
 (* C_USE_BSCAN = "0" *) (* C_USE_CONFIG_RESET = "0" *) (* C_USE_CROSS_TRIGGER = "0" *) 
-(* C_USE_UART = "0" *) (* ORIG_REF_NAME = "MDM" *) (* bscan_debug_core = "FALSE" *) 
-(* dont_touch = "false" *) 
+(* C_USE_UART = "0" *) (* bscan_debug_core = "FALSE" *) (* dont_touch = "false" *) 
 module IRIS_Block_Design_mdm_1_0_MDM
    (Config_Reset,
     Scan_Reset_Sel,
@@ -13522,7 +13514,6 @@ module IRIS_Block_Design_mdm_1_0_MDM
         .I0(TDI));
 endmodule
 
-(* ORIG_REF_NAME = "MDM_Core" *) 
 module IRIS_Block_Design_mdm_1_0_MDM_Core
    (\shift_Count_reg[0] ,
     Debug_SYS_Rst,

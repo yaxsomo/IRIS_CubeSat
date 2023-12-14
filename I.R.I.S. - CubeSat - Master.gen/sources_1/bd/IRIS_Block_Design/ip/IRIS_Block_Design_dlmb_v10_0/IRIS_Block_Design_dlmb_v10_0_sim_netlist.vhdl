@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Thu Dec 14 13:05:40 2023
 -- Host        : DESKTOP-BC6995K running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat -
---               Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_dlmb_v10_0/IRIS_Block_Design_dlmb_v10_0_sim_netlist.vhdl}
+-- Command     : write_vhdl -force -mode funcsim -rename_top IRIS_Block_Design_dlmb_v10_0 -prefix
+--               IRIS_Block_Design_dlmb_v10_0_ IRIS_Block_Design_dlmb_v10_0_sim_netlist.vhdl
 -- Design      : IRIS_Block_Design_dlmb_v10_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -53,8 +53,6 @@ entity IRIS_Block_Design_dlmb_v10_0_lmb_v10 is
   attribute C_LMB_NUM_SLAVES of IRIS_Block_Design_dlmb_v10_0_lmb_v10 : entity is 1;
   attribute C_LMB_PROTOCOL : integer;
   attribute C_LMB_PROTOCOL of IRIS_Block_Design_dlmb_v10_0_lmb_v10 : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of IRIS_Block_Design_dlmb_v10_0_lmb_v10 : entity is "lmb_v10";
 end IRIS_Block_Design_dlmb_v10_0_lmb_v10;
 
 architecture STRUCTURE of IRIS_Block_Design_dlmb_v10_0_lmb_v10 is

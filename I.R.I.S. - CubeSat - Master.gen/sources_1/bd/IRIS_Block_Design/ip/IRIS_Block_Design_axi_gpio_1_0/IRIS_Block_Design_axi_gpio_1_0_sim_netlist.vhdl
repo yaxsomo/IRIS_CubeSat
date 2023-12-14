@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Thu Dec 14 13:26:09 2023
 -- Host        : DESKTOP-BC6995K running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat -
---               Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_1_0/IRIS_Block_Design_axi_gpio_1_0_sim_netlist.vhdl}
+-- Command     : write_vhdl -force -mode funcsim -rename_top IRIS_Block_Design_axi_gpio_1_0 -prefix
+--               IRIS_Block_Design_axi_gpio_1_0_ IRIS_Block_Design_axi_gpio_1_0_sim_netlist.vhdl
 -- Design      : IRIS_Block_Design_axi_gpio_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -32,8 +32,6 @@ entity IRIS_Block_Design_axi_gpio_1_0_GPIO_Core is
     Bus_RNW_reg : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of IRIS_Block_Design_axi_gpio_1_0_GPIO_Core : entity is "GPIO_Core";
 end IRIS_Block_Design_axi_gpio_1_0_GPIO_Core;
 
 architecture STRUCTURE of IRIS_Block_Design_axi_gpio_1_0_GPIO_Core is
@@ -160,8 +158,6 @@ entity IRIS_Block_Design_axi_gpio_1_0_pselect_f is
     ce_expnd_i_3 : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of IRIS_Block_Design_axi_gpio_1_0_pselect_f : entity is "pselect_f";
 end IRIS_Block_Design_axi_gpio_1_0_pselect_f;
 
 architecture STRUCTURE of IRIS_Block_Design_axi_gpio_1_0_pselect_f is
@@ -229,8 +225,6 @@ entity IRIS_Block_Design_axi_gpio_1_0_address_decoder is
     ip2bus_wrack_i_D1 : in STD_LOGIC;
     s_axi_awready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of IRIS_Block_Design_axi_gpio_1_0_address_decoder : entity is "address_decoder";
 end IRIS_Block_Design_axi_gpio_1_0_address_decoder;
 
 architecture STRUCTURE of IRIS_Block_Design_axi_gpio_1_0_address_decoder is
@@ -451,8 +445,6 @@ entity IRIS_Block_Design_axi_gpio_1_0_slave_attachment is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of IRIS_Block_Design_axi_gpio_1_0_slave_attachment : entity is "slave_attachment";
 end IRIS_Block_Design_axi_gpio_1_0_slave_attachment;
 
 architecture STRUCTURE of IRIS_Block_Design_axi_gpio_1_0_slave_attachment is
@@ -1075,8 +1067,6 @@ entity IRIS_Block_Design_axi_gpio_1_0_axi_lite_ipif is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of IRIS_Block_Design_axi_gpio_1_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end IRIS_Block_Design_axi_gpio_1_0_axi_lite_ipif;
 
 architecture STRUCTURE of IRIS_Block_Design_axi_gpio_1_0_axi_lite_ipif is
@@ -1178,8 +1168,6 @@ entity IRIS_Block_Design_axi_gpio_1_0_axi_gpio is
   attribute C_TRI_DEFAULT of IRIS_Block_Design_axi_gpio_1_0_axi_gpio : entity is "32'b11111111111111111111111111111111";
   attribute C_TRI_DEFAULT_2 : string;
   attribute C_TRI_DEFAULT_2 of IRIS_Block_Design_axi_gpio_1_0_axi_gpio : entity is "32'b11111111111111111111111111111111";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of IRIS_Block_Design_axi_gpio_1_0_axi_gpio : entity is "axi_gpio";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of IRIS_Block_Design_axi_gpio_1_0_axi_gpio : entity is "yes";
   attribute ip_group : string;

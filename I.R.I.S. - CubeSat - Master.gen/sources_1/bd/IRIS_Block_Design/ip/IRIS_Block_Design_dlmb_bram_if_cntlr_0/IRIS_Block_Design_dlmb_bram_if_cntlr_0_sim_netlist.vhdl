@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Thu Dec 14 13:07:10 2023
 -- Host        : DESKTOP-BC6995K running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat -
---               Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_dlmb_bram_if_cntlr_0/IRIS_Block_Design_dlmb_bram_if_cntlr_0_sim_netlist.vhdl}
+-- Command     : write_vhdl -force -mode funcsim -rename_top IRIS_Block_Design_dlmb_bram_if_cntlr_0 -prefix
+--               IRIS_Block_Design_dlmb_bram_if_cntlr_0_ IRIS_Block_Design_dlmb_bram_if_cntlr_0_sim_netlist.vhdl
 -- Design      : IRIS_Block_Design_dlmb_bram_if_cntlr_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -199,8 +199,6 @@ entity IRIS_Block_Design_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr is
   attribute C_UE_FAILING_REGISTERS of IRIS_Block_Design_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr : entity is 0;
   attribute C_WRITE_ACCESS : integer;
   attribute C_WRITE_ACCESS of IRIS_Block_Design_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr : entity is 2;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of IRIS_Block_Design_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr : entity is "lmb_bram_if_cntlr";
 end IRIS_Block_Design_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr;
 
 architecture STRUCTURE of IRIS_Block_Design_dlmb_bram_if_cntlr_0_lmb_bram_if_cntlr is

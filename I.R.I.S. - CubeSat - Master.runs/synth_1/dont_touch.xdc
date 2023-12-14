@@ -48,22 +48,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==IRIS_Block_
 # IP: bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_1_0/IRIS_Block_Design_axi_gpio_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==IRIS_Block_Design_axi_gpio_1_0 || ORIG_REF_NAME==IRIS_Block_Design_axi_gpio_1_0} -quiet] -quiet
 
-# IP: bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_2_0/IRIS_Block_Design_axi_gpio_2_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==IRIS_Block_Design_axi_gpio_2_0 || ORIG_REF_NAME==IRIS_Block_Design_axi_gpio_2_0} -quiet] -quiet
-
-# IP: bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_3_0/IRIS_Block_Design_axi_gpio_3_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==IRIS_Block_Design_axi_gpio_3_0 || ORIG_REF_NAME==IRIS_Block_Design_axi_gpio_3_0} -quiet] -quiet
-
-# IP: bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_4_0/IRIS_Block_Design_axi_gpio_4_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==IRIS_Block_Design_axi_gpio_4_0 || ORIG_REF_NAME==IRIS_Block_Design_axi_gpio_4_0} -quiet] -quiet
-
-# IP: bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_5_0/IRIS_Block_Design_axi_gpio_5_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==IRIS_Block_Design_axi_gpio_5_0 || ORIG_REF_NAME==IRIS_Block_Design_axi_gpio_5_0} -quiet] -quiet
-
-# IP: bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_6_0/IRIS_Block_Design_axi_gpio_6_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==IRIS_Block_Design_axi_gpio_6_0 || ORIG_REF_NAME==IRIS_Block_Design_axi_gpio_6_0} -quiet] -quiet
-
-# IP: bd/IRIS_Block_Design/ip/IRIS_Block_Design_axi_gpio_7_0/IRIS_Block_Design_axi_gpio_7_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==IRIS_Block_Design_axi_gpio_7_0 || ORIG_REF_NAME==IRIS_Block_Design_axi_gpio_7_0} -quiet] -quiet
-
 # XDC: c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design/IRIS_Block_Design_ooc.xdc

@@ -4,8 +4,8 @@
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 // Date        : Thu Dec 14 13:07:10 2023
 // Host        : DESKTOP-BC6995K running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat -
-//               Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_dlmb_bram_if_cntlr_0/IRIS_Block_Design_dlmb_bram_if_cntlr_0_stub.v}
+// Command     : write_verilog -force -mode synth_stub -rename_top IRIS_Block_Design_dlmb_bram_if_cntlr_0 -prefix
+//               IRIS_Block_Design_dlmb_bram_if_cntlr_0_ IRIS_Block_Design_dlmb_bram_if_cntlr_0_stub.v
 // Design      : IRIS_Block_Design_dlmb_bram_if_cntlr_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tfgg484-2

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x5303F7D517153EE0",
+      "boundary_crc": "0xB8A9BF6855CC9C74",
       "device": "xc7a100tfgg484-2",
       "gen_directory": "../../../../I.R.I.S. - CubeSat - Master.gen/sources_1/bd/IRIS_Block_Design",
       "name": "IRIS_Block_Design",
@@ -110,7 +110,7 @@
       },
       "KEY1": {
         "direction": "I",
-        "left": "3",
+        "left": "0",
         "right": "0"
       }
     },

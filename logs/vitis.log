@@ -1,0 +1,42 @@
+14:56:33 INFO  : updated workspace path: 
+14:56:33 INFO  : updated workspace path: 
+14:56:36 INFO  : Successfully created repository data at C:\Users\yohan\AppData\Local\Temp\rigel_lopper_Justin Monfroy13702530249989385420
+14:56:36 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\yohan\AppData\Local\Temp\rigel_lopper_Justin Monfroy8730319804601101984 -r C:\Users\yohan\AppData\Local\Temp\rigel_lopper_Justin Monfroy13702530249989385420\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+14:56:36 ERROR : usage: use "python get_template_data.py --help" for more information
+14:56:36 INFO  : get_template_data.py: error: unrecognized arguments: Monfroy8730319804601101984 Monfroy13702530249989385420\.repo.yaml
+14:56:36 ERROR : Error in generating Application Template List.
+14:56:36 ERROR : Error in generating Application Template List. usage: use "python get_template_data.py --help" for more information
+14:56:36 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2023.2\data\embeddedsw && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+14:56:38 INFO  : Successfully created repository data at C:\Users\yohan\AppData\Local\Temp\rigel_lopper_Justin Monfroy10885952899164951766
+14:56:38 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\yohan\AppData\Local\Temp\rigel_lopper_Justin Monfroy10561122290175144361 -r C:\Users\yohan\AppData\Local\Temp\rigel_lopper_Justin Monfroy10885952899164951766\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+14:56:38 ERROR : usage: use "python get_template_data.py --help" for more information
+14:56:38 INFO  : get_template_data.py: error: unrecognized arguments: Monfroy10561122290175144361 Monfroy10885952899164951766\.repo.yaml
+14:56:38 ERROR : Error in generating Application Template List.
+14:56:38 ERROR : Error in generating Application Template List. usage: use "python get_template_data.py --help" for more information
+14:56:38 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2023.2\data\embeddedsw && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+14:56:40 INFO  : Successfully created repository data at C:\Users\yohan\AppData\Local\Temp\rigel_lopper_Justin Monfroy1656443358028252049
+14:56:40 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\yohan\AppData\Local\Temp\rigel_lopper_Justin Monfroy12091201404678075343 -r C:\Users\yohan\AppData\Local\Temp\rigel_lopper_Justin Monfroy1656443358028252049\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+14:56:40 ERROR : usage: use "python get_template_data.py --help" for more information
+14:56:40 INFO  : get_template_data.py: error: unrecognized arguments: Monfroy12091201404678075343 Monfroy1656443358028252049\.repo.yaml
+14:56:40 ERROR : Error in generating Application Template List.
+14:56:40 ERROR : Error in generating Application Template List. usage: use "python get_template_data.py --help" for more information
+14:58:19 INFO  : Found no platform with name 'IRIS_Block_Design_wrapper' in install repositories
+14:58:26 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && xsct.bat C:\Xilinx\Vitis\2023.2\vitisng-server\scripts\platformutil.tcl C:\Users\yohan\Documents\IRIS_CubeSat\IRIS_Block_Design_wrapper.xsa C:\Users\yohan\AppData\Local\Temp\rigel_lopper_temp_platformJustin Monfroy15376763448591779912\IRIS_Block_Design_wrapper\hw\sdt && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+14:58:30 INFO  : Commande ECHO d‚sactiv‚e.
+14:58:30 INFO  : Commande ECHO d‚sactiv‚e.
+14:58:30 ERROR : usage: sdtgen xsapath outputdirectory
+14:58:30 INFO  :     while executing
+14:58:30 ERROR : "error "usage: sdtgen xsapath outputdirectory""
+14:58:30 INFO  :     invoked from within
+14:58:30 INFO  : "if { [llength $argv] !=2 } {
+14:58:30 ERROR : error "usage: sdtgen xsapath outputdirectory"
+14:58:30 INFO  : }"
+14:58:30 INFO  :     (file "C:\Xilinx\Vitis\2023.2\vitisng-server\scripts\platformutil.tcl" line 1)
+14:58:30 INFO  : SDT generated successfully
+14:58:30 ERROR : InValid Platform,System DTS File does not exist in 'C:\Users\yohan\AppData\Local\Temp\rigel_lopper_temp_platformJustin Monfroy15376763448591779912\IRIS_Block_Design_wrapper\hw\sdt\system-top.dts'.
+15:00:44 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2023.2\data\embeddedsw && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:00:44 INFO  : Marking the target connection as default Local
+15:00:44 INFO  : Marking the target connection as default Linux Agent
+15:00:44 INFO  : Marking the target connection as default XRTServer
+15:00:44 INFO  : Marking the target connection as default LinuxEmulation
+15:00:44 INFO  : Marking the target connection as default QEMU

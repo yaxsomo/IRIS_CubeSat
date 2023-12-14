@@ -672,7 +672,15 @@
     "contents": {
       "cpus": {
         "microblaze": {
-          "address_space_refs": "Data"
+          "address_space_refs": "Data",
+          "parameters": {
+            "endian": [ { "value": "little" } ],
+            "elf_class": [ { "value": "32-bit" } ],
+            "instance_path": [ { "value": "" } ],
+            "bootloop_file": [ { "value": "data/mb_bootloop_le.elf" } ],
+            "processor_type": [ { "value": "MICROBLAZE_LE" } ],
+            "is_visible": [ { "value": "true" } ]
+          }
         }
       }
     }

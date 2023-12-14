@@ -4,8 +4,8 @@
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 // Date        : Thu Dec 14 13:04:16 2023
 // Host        : DESKTOP-BC6995K running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat -
-//               Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_clk_wiz_0_0/IRIS_Block_Design_clk_wiz_0_0_sim_netlist.v}
+// Command     : write_verilog -force -mode funcsim -rename_top IRIS_Block_Design_clk_wiz_0_0 -prefix
+//               IRIS_Block_Design_clk_wiz_0_0_ IRIS_Block_Design_clk_wiz_0_0_sim_netlist.v
 // Design      : IRIS_Block_Design_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -26,13 +26,13 @@ module IRIS_Block_Design_clk_wiz_0_0
   (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_in1_p;
   wire clk_out1;
 
-  IRIS_Block_Design_clk_wiz_0_0_clk_wiz inst
+  IRIS_Block_Design_clk_wiz_0_0_IRIS_Block_Design_clk_wiz_0_0_clk_wiz inst
        (.clk_in1_n(clk_in1_n),
         .clk_in1_p(clk_in1_p),
         .clk_out1(clk_out1));
 endmodule
 
-module IRIS_Block_Design_clk_wiz_0_0_clk_wiz
+module IRIS_Block_Design_clk_wiz_0_0_IRIS_Block_Design_clk_wiz_0_0_clk_wiz
    (clk_out1,
     clk_in1_p,
     clk_in1_n);

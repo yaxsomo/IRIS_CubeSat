@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Thu Dec 14 13:05:40 2023
 -- Host        : DESKTOP-BC6995K running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat -
---               Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_dlmb_v10_0/IRIS_Block_Design_dlmb_v10_0_stub.vhdl}
+-- Command     : write_vhdl -force -mode synth_stub -rename_top IRIS_Block_Design_dlmb_v10_0 -prefix
+--               IRIS_Block_Design_dlmb_v10_0_ IRIS_Block_Design_dlmb_v10_0_stub.vhdl
 -- Design      : IRIS_Block_Design_dlmb_v10_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tfgg484-2

@@ -4,8 +4,8 @@
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 // Date        : Thu Dec 14 13:05:40 2023
 // Host        : DESKTOP-BC6995K running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {c:/Users/yohan/Documents/IRIS_CubeSat/I.R.I.S. - CubeSat -
-//               Master.gen/sources_1/bd/IRIS_Block_Design/ip/IRIS_Block_Design_dlmb_v10_0/IRIS_Block_Design_dlmb_v10_0_sim_netlist.v}
+// Command     : write_verilog -force -mode funcsim -rename_top IRIS_Block_Design_dlmb_v10_0 -prefix
+//               IRIS_Block_Design_dlmb_v10_0_ IRIS_Block_Design_dlmb_v10_0_sim_netlist.v
 // Design      : IRIS_Block_Design_dlmb_v10_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -127,7 +127,7 @@ module IRIS_Block_Design_dlmb_v10_0
 endmodule
 
 (* C_EXT_RESET_HIGH = "1" *) (* C_LMB_AWIDTH = "32" *) (* C_LMB_DWIDTH = "32" *) 
-(* C_LMB_NUM_SLAVES = "1" *) (* C_LMB_PROTOCOL = "0" *) (* ORIG_REF_NAME = "lmb_v10" *) 
+(* C_LMB_NUM_SLAVES = "1" *) (* C_LMB_PROTOCOL = "0" *) 
 module IRIS_Block_Design_dlmb_v10_0_lmb_v10
    (LMB_Clk,
     SYS_Rst,

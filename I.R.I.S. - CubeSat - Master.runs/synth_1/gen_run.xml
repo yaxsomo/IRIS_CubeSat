@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-2" LaunchTime="1702557629" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/IRIS_Block_Design_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-2" LaunchTime="1702561890" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/IRIS_Block_Design_wrapper.dcp">
   <File Type="PA-TCL" Name="IRIS_Block_Design_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="IRIS_Block_Design_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="IRIS_Block_Design_wrapper_reports.tcl"/>
@@ -61,23 +61,4 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_axi_gpio_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_ilmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_rst_clk_wiz_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_ilmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_mdm_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_axi_gpio_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_axi_gpio_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_axi_gpio_6_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_axi_gpio_7_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_axi_gpio_4_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IRIS_Block_Design_axi_gpio_5_0"/>
 </GenRun>
