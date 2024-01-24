@@ -4,6 +4,8 @@ This Repository is dedicated to FPGA development of the IRIS CubeSat
 
 ## Authors
 
+Yassine DEHHANI & Emile BAILEY
+
 <a href="https://github.com/yaxsomo/IRIS_CubeSat/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=yaxsomo/IRIS_CubeSat" />
 </a>
