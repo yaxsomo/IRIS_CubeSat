@@ -1,0 +1,495 @@
+
+*** Running vivado
+    with args -log gtp.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gtp.tcl
+
+
+Commande ECHO d‚sactiv‚e.
+Commande ECHO d‚sactiv‚e.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source gtp.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 474.098 ; gain = 182.562
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: gtp
+Command: synth_design -top gtp -part xc7a100tfgg484-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19048
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1337.715 ; gain = 437.832
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gtp' [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp.v:70]
+INFO: [Synth 8-6157] synthesizing module 'gtp_init' [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp_init.v:70]
+INFO: [Synth 8-6157] synthesizing module 'gtp_multi_gt' [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp_multi_gt.v:70]
+INFO: [Synth 8-6157] synthesizing module 'gtp_GT' [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp_gt.v:71]
+INFO: [Synth 8-6157] synthesizing module 'GTPE2_CHANNEL' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:50184]
+INFO: [Synth 8-6155] done synthesizing module 'GTPE2_CHANNEL' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:50184]
+INFO: [Synth 8-6157] synthesizing module 'gtp_gtrxreset_seq' [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_gtrxreset_seq.v:72]
+INFO: [Synth 8-6157] synthesizing module 'gtp_sync_block' [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_sync_block.v:78]
+INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:40764]
+INFO: [Synth 8-6155] done synthesizing module 'FD' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:40764]
+INFO: [Synth 8-6155] done synthesizing module 'gtp_sync_block' (0#1) [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_sync_block.v:78]
+INFO: [Synth 8-226] default block is never used [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_gtrxreset_seq.v:179]
+INFO: [Synth 8-226] default block is never used [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_gtrxreset_seq.v:240]
+INFO: [Synth 8-6155] done synthesizing module 'gtp_gtrxreset_seq' (0#1) [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_gtrxreset_seq.v:72]
+INFO: [Synth 8-6157] synthesizing module 'gtp_rxpmarst_seq' [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_rxpmarst_seq.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'gtp_rxpmarst_seq' (0#1) [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_rxpmarst_seq.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'gtp_GT' (0#1) [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp_gt.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'gtp_multi_gt' (0#1) [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp_multi_gt.v:70]
+INFO: [Synth 8-6157] synthesizing module 'gtp_TX_STARTUP_FSM' [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_tx_startup_fsm.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'gtp_TX_STARTUP_FSM' (0#1) [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_tx_startup_fsm.v:94]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6157] synthesizing module 'gtp_RX_STARTUP_FSM' [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_rx_startup_fsm.v:94]
+INFO: [Synth 8-6157] synthesizing module 'FDP' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:40932]
+INFO: [Synth 8-6155] done synthesizing module 'FDP' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:40932]
+INFO: [Synth 8-6155] done synthesizing module 'gtp_RX_STARTUP_FSM' (0#1) [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_rx_startup_fsm.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'gtp_init' (0#1) [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp_init.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'gtp' (0#1) [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp.v:70]
+WARNING: [Synth 8-6014] Unused sequential element time_out_500us_reg was removed.  [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_rx_startup_fsm.v:439]
+WARNING: [Synth 8-6014] Unused sequential element pll_reset_asserted_reg was removed.  [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_rx_startup_fsm.v:637]
+WARNING: [Synth 8-6014] Unused sequential element gtrxreset_tx_i_reg was removed.  [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp/example_design/gtp_rx_startup_fsm.v:341]
+WARNING: [Synth 8-7129] Port PLL0REFCLKLOST in module gtp_RX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PLL1REFCLKLOST in module gtp_RX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PLL1REFCLKLOST in module gtp_TX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt0_rxuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt0_gtrxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt0_gttxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt0_txuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt1_rxuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt1_gtrxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt1_gttxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt1_txuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt2_rxuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt2_gtrxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt2_gttxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt2_txuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt3_rxuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt3_gtrxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt3_gttxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt3_txuserrdy_in in module gtp_init is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1461.562 ; gain = 561.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1461.562 ; gain = 561.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1461.562 ; gain = 561.680
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1461.562 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 568 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.gen/sources_1/ip/gtp/gtp.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.runs/gtp_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.runs/gtp_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1507.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 568 instances were transformed.
+  FD => FDRE: 552 instances
+  FDP => FDPE: 16 instances
+
+Le chemin d'accŠs sp‚cifi‚ est introuvable.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.146 . Memory (MB): peak = 1511.340 ; gain = 4.117
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.runs/gtp_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'gtp_gtrxreset_seq'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'gtp_rxpmarst_seq'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'gtp_TX_STARTUP_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'gtp_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                         00000010 |                              000
+                  drp_rd |                         10000000 |                              001
+            wait_rd_data |                         01000000 |                              010
+                   wr_16 |                         00100000 |                              011
+           wait_wr_done1 |                         00010000 |                              100
+           wait_pmareset |                         00001000 |                              101
+                   wr_20 |                         00000100 |                              110
+           wait_wr_done2 |                         00000001 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'gtp_gtrxreset_seq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                        000010000 |                             0000
+                  drp_rd |                        000100000 |                             0001
+            wait_rd_data |                        000001000 |                             0010
+                   wr_16 |                        000000001 |                             0011
+           wait_wr_done1 |                        000000010 |                             0100
+           wait_pmareset |                        000000100 |                             0101
+                   wr_20 |                        100000000 |                             0110
+           wait_wr_done2 |                        001000000 |                             0111
+       wait_rxpmarst_low |                        010000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'gtp_rxpmarst_seq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+       WAIT_FOR_TXOUTCLK |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_TXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+          RESET_FSM_DONE |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'gtp_TX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+    VERIFY_RECCLK_STABLE |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_RXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+      MONITOR_DATA_VALID |                             1001 |                             1001
+                FSM_DONE |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'gtp_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 24    
+	   2 Input    2 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 16    
+	                8 Bit    Registers := 24    
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 236   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 16    
+	   8 Input   16 Bit        Muxes := 4     
+	   9 Input   16 Bit        Muxes := 4     
+	   9 Input    9 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 32    
+	   8 Input    8 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 28    
+	  10 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 40    
+	  11 Input    4 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 116   
+	   8 Input    1 Bit        Muxes := 16    
+	   9 Input    1 Bit        Muxes := 20    
+	  10 Input    1 Bit        Muxes := 68    
+	  11 Input    1 Bit        Muxes := 76    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port PLL0REFCLKLOST in module gtp_RX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PLL1REFCLKLOST in module gtp_RX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PLL1REFCLKLOST in module gtp_TX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt0_rxuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt0_gtrxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt0_gttxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt0_txuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt1_rxuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt1_gtrxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt1_gttxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt1_txuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt2_rxuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt2_gtrxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt2_gttxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt2_txuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt3_rxuserrdy_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt3_gtrxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt3_gttxreset_in in module gtp_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt3_txuserrdy_in in module gtp_init is either unconnected or has no load
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll1lock/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll1lock/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll1lock/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll1lock/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll1lock/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll1lock/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll1lock/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll1lock/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll1lock/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll1lock/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll1lock/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll1lock/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll1lock/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll1lock/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll1lock/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll1lock/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll1lock/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll1lock/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt3_txresetfsm_i/sync_pll1lock/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt3_txresetfsm_i/sync_pll1lock/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt3_txresetfsm_i/sync_pll1lock/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt3_txresetfsm_i/sync_pll1lock/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt3_txresetfsm_i/sync_pll1lock/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt3_txresetfsm_i/sync_pll1lock/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/reset_sync1_rx) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/reset_sync2_rx) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/reset_sync1_rx) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/reset_sync2_rx) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg1) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg2) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg3) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg4) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg5) is unused and will be removed from module gtp_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg6) is unused and will be removed from module gtp_init.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:50 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:51 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:58 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:58 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:58 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:58 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     1|
+|2     |CARRY4        |   140|
+|3     |GTPE2_CHANNEL |     4|
+|4     |LUT1          |   180|
+|5     |LUT2          |   160|
+|6     |LUT3          |   244|
+|7     |LUT4          |   140|
+|8     |LUT5          |   292|
+|9     |LUT6          |   333|
+|10    |FD            |   408|
+|11    |FDCE          |   296|
+|12    |FDP           |     8|
+|13    |FDPE          |     8|
+|14    |FDRE          |   853|
+|15    |FDSE          |    52|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1511.340 ; gain = 611.457
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 1511.340 ; gain = 561.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1511.340 ; gain = 611.457
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1511.340 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 556 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1511.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 416 instances were transformed.
+  FD => FDRE: 408 instances
+  FDP => FDPE: 8 instances
+
+Le chemin d'accŠs sp‚cifi‚ est introuvable.
+Synth Design complete | Checksum: 29f77cdc
+INFO: [Common 17-83] Releasing license: Synthesis
+155 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:08 . Memory (MB): peak = 1511.340 ; gain = 1021.332
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1511.340 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.runs/gtp_synth_1/gtp.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP gtp, cache-ID = d47a9f930ca443ff
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1511.340 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.runs/gtp_synth_1/gtp.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file gtp_utilization_synth.rpt -pb gtp_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 10 22:58:44 2024...

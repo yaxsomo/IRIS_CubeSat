@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jan 10 22:57:20 2024
+# Process ID: 12984
+# Current directory: C:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.runs/sys_clock_synth_1
+# Command line: vivado.exe -log sys_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sys_clock.tcl
+# Log file: C:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.runs/sys_clock_synth_1/sys_clock.vds
+# Journal file: C:/Users/yohan/Desktop/gtp_5g_test/gtp_5g_test.runs/sys_clock_synth_1\vivado.jou
+# Running On: DESKTOP-BC6995K, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 16944 MB
+#-----------------------------------------------------------
+source sys_clock.tcl -notrace

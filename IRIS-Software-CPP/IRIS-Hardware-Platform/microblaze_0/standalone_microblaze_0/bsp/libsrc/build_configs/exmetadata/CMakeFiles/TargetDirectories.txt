@@ -1,4 +1,0 @@
-C:/Users/yohan/Documents/IRIS_CubeSat/IRIS-Software-CPP/IRIS-Hardware-Platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/gpio_example.dir
-C:/Users/yohan/Documents/IRIS_CubeSat/IRIS-Software-CPP/IRIS-Hardware-Platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/uartlite_example.dir
-C:/Users/yohan/Documents/IRIS_CubeSat/IRIS-Software-CPP/IRIS-Hardware-Platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/edit_cache.dir
-C:/Users/yohan/Documents/IRIS_CubeSat/IRIS-Software-CPP/IRIS-Hardware-Platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/rebuild_cache.dir
